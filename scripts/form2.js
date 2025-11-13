@@ -5,7 +5,7 @@ document.querySelector(".btn-submit-your-application").addEventListener("click",
     const name = document.getElementById("name").value.trim();
     const lastname = document.getElementById("lastname").value.trim();
     const email = document.getElementById("email").value.trim();
-    const message = document.getElementById("quantity").value.trim();
+    const message = document.getElementById("message").value.trim();
     const agreement = document.getElementById("checkedDisabled").checked ? "✅ Согласен" : "❌ Не согласен";
 
     if (!phone || !name || !lastname || !email || !message) {
