@@ -1105,9 +1105,13 @@ textarea{
 
 .checkbox label{
     cursor: pointer;
-    font-size: 20;
+    font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.75rem;
+}
+
+.text-label{
+    color: var(--bg-light);
 }
 
 .btn-privaty-police{
