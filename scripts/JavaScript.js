@@ -48,24 +48,3 @@ document.addEventListener('DOMContentLoaded', function() {
 $(document).ready(function(){
   $('#phone').inputmask('+7 (999) 999-99-99');
 })
-
-
-document.addEventListener('DOMContentLoaded', function() {
-    const quantityInput = document.getElementById('quantity');
-    const totalPriceElement = document.getElementById('total-price');
-    const pricePerItemElement = document.getElementById('price-per-item');
-    
-    quantityInput.addEventListener('input', function() {
-        const quantity = parseInt(this.value) || 0;
-        const pricePerItem = 500;
-        const totalPrice = quantity * pricePerItem;
-        
-        totalPriceElement.textContent = totalPrice.toLocaleString('ru-RU') + ' ₽';
-        pricePerItemElement.textContent = pricePerItem.toLocaleString('ru-RU') + ' ₽ за один саженец';
-    });
-    
-    document.getElementById('planting-form').addEventListener('submit', function(e) {
-        e.preventDefault();
-        alert('Заявка успешно отправлена! Мы свяжемся с вами в ближайшее время.');
-    });
-});
