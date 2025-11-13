@@ -1,3 +1,17 @@
+:root {
+    --primary-main: #2e7d32;      
+    --primary-light: #4CAF50;      
+    --primary-lighter: #66BB6A;    
+    
+    --secondary-main: #64B5F6;    
+    
+    --bg-dark: #111111;            
+    --bg-darker: #131811;
+    --bg-light: #ffffff; 
+
+    --text-secondary: #555555; 
+    --bg-light-gray: #f5f5f5;      
+}
 * {
     margin: 0;
     padding: 0;
@@ -9,14 +23,19 @@ body {
     display: flex;
     flex-direction: column;
     justify-self: center;
-    background-color: #f5f5f5;
+    background-color: var(--bg-light-gray);
     width: 100%;
 }
+
+body.dark-theme {
+    background-color: var(--bg-light-gray);
+}
+
 .container{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #f5f5f5;
+    background-color: var(--bg-light-gray);
     padding: 0 8.4375rem;
 }
 
@@ -28,7 +47,7 @@ header {
     align-items: center;
     box-shadow: 0 .625rem 1.875rem rgba(0,0,0,0.3);
     padding: 1.6875rem 2.25rem 1.6875rem 1.25rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     border-radius: 2rem;
     margin: 4rem 8rem 10.25rem 8rem;    
     position: relative;
@@ -46,7 +65,7 @@ header {
 
 .burger-button{
     padding: .5rem;
-    background-color: #66BB6A;
+    background-color: var(--primary-lighter) ;
     border-radius: .75rem;
     display: none;
     cursor: pointer;
@@ -72,7 +91,7 @@ header {
     font-weight: 400;
     border-color: transparent;
     line-height: 1.5rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .mobile-menu {
@@ -81,7 +100,7 @@ header {
     top: 100%;
     left: 0;
     right: 0;
-    background: #111111;
+    background: var(--bg-dark);
     padding: .6875rem 1.25rem;
     box-shadow: 0 .625rem 1.875rem rgba(0,0,0,0.3);
     flex-direction: column;
@@ -103,8 +122,8 @@ header {
 .mobile-btn {
     padding: .5rem 1rem;
     background-color: transparent;
-    border: .125rem solid #66BB6A;
-    color: #66BB6A;
+    border: .125rem solid var(--primary-lighter);
+    color: var(--primary-lighter);
     border-color: transparent;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -116,8 +135,8 @@ header {
 }
 
 .mobile-btn:hover {
-    background-color: #66BB6A;
-    color: #111111;
+    background-color: var(--primary-lighter);
+    color: var(--bg-dark);
 }
 
 .mobile-menu::before {
@@ -133,7 +152,7 @@ header {
 /* Main */
 .form-main{
     border-radius: 3.75rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     width: 101.25rem;
     margin-bottom: 6.25rem;
     position: relative;
@@ -183,15 +202,15 @@ header {
     font-size: 1.25rem;
     font-weight: 400;
     line-height: 1.75rem;
-    background-color: #2e7d32;
-    color: #66BB6A;
+    background-color: var(--primary-main);
+    color: var(--primary-lighter);
     border-radius: 1.25rem;
     transition: background-color 0.8s, color 0.8s;
 }
 
 .btn-main:hover {
-    background-color: #555555;
-    color: #fff;
+    background-color: #555555 var(--text-secondary);
+    color: var(--bg-light);
 }
 
 .double-photo{
@@ -209,7 +228,7 @@ header {
 .text-main{
     font-size: 2.25rem;
     font-weight: 500;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     width: 32.75rem;
     line-height: 2.5rem;
 }
@@ -290,18 +309,18 @@ header {
 .texts-seedling-city-format h1{
     text-align: center;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .texts-seedling-city-format h3{
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
 
 .form-container {
-    background-color: #111111;
+    background-color: var(--bg-dark);
     width: 100%;
     border-radius: 3.75rem;
     padding: 3.5rem 3.5rem 3.1875rem 3.5rem;
@@ -329,7 +348,7 @@ header {
 }
 
 .form-group label {
-    color: #66BB6A;
+    color: var(--primary-lighter);
     display: block;
     margin-bottom: .9375rem;
     font-weight: 500;
@@ -338,7 +357,7 @@ header {
 }
 
 .form-group2 label {
-    color: #66BB6A;
+    color: var(--primary-lighter);
     display: block;
     margin-bottom: .9375rem;
     font-weight: 500;
@@ -348,8 +367,8 @@ header {
 
 .form-control1 {
     width: 100%;
-    color: #fff;
-    background-color: #131811;
+    color: var(--bg-light);
+    background-color: var(--bg-darker);
     padding: .9375rem 2.5rem .9375rem .75rem;
     font-size: 1.125rem;
     font-weight: 400;
@@ -360,8 +379,8 @@ header {
 
 .form-control2 {
     width: 100%;
-    color: #fff;
-    background-color: #131811;
+    color: var(--bg-light);
+    background-color: var(--bg-darker);
     padding: .9375rem 2.5rem .9375rem .75rem;
     border-radius: .625rem;
     font-weight: 400;
@@ -371,13 +390,13 @@ header {
 }
 
 .price-amount {
-    color: #66BB6A;
+    color: var(--primary-lighter);
     font-size: 3rem;
     font-weight: 500;
 }
 
 .price-per-item {
-    color: #66BB6A;
+    color: var(--primary-lighter);
     font-size: 1.25rem;
     line-height: 1.75rem;
     margin-bottom: 2.375rem;
@@ -387,8 +406,8 @@ header {
     display: block;
     width: 100%;
     padding: .9375rem;
-    background-color: #2e7d32;
-    color: #66BB6A;
+    background-color: var(--primary-main);
+    color: var(--primary-lighter);
     border: none;
     border-radius: 1.25rem;
     font-weight: 400;
@@ -399,8 +418,8 @@ header {
 }
 
 .btn-submit:hover {
-    background-color: #555555;
-    color: #fff;
+    background-color: var(--text-secondary);
+    color: var(--bg-light);
 }
 
 /* How it works */
@@ -421,12 +440,12 @@ header {
 .texts-how-it-works h1{
     text-align: center;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .texts-how-it-works h3{
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -439,7 +458,7 @@ header {
     padding: 4.0625rem 4rem;
     width: 100%;
     gap: 3.625rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
 }
 
 .form-container-plan-work{
@@ -465,18 +484,18 @@ header {
     font-size: 1.875rem;
     line-height: 2.25rem;
     font-weight: 500;
-    color: #4CAF50;
+    color: var(--primary-light);
 }
 
 .plan-number{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     padding: .625rem 1.1875rem;
     margin-right: .75rem;
     border-radius: 2rem;
 }
 
 .plan-number1{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     padding: .625rem 1.4063rem;
     margin-right: .75rem;
     border-radius: 2rem;
@@ -486,13 +505,13 @@ header {
     font-size: 2.25rem;
     line-height: 2.5rem;
     font-weight: 500;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .text-how-it-works{
     font-size: 3rem;
     font-weight: 500;
-    color: #4CAF50;
+    color: var(--primary-light);
 }
 
 /* Influence form */
@@ -513,12 +532,12 @@ header {
 .texts-influence h1{
     text-align: center;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .texts-influence h3{
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -536,13 +555,13 @@ header {
     flex-direction: column;
     align-items: center;
     padding: 3.625rem 2.25rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     border-radius: 3.75rem;
     gap: .6875rem;
 }
 
 .influence-img{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1rem;
 }
@@ -554,12 +573,12 @@ header {
 
 .heading-influence{
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     font-weight: bold;
 }
 
 .description-influence{
-    color: #66BB6A;
+    color: var(--primary-lighter);
     font-size: 1.25rem;
     line-height: 1.75rem;
     font-weight: 400;
@@ -585,12 +604,12 @@ header {
 .texts-plant-a-tree h1{
     text-align: center;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .texts-plant-a-tree h3{
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -603,7 +622,7 @@ header {
 }
 
 .plant-a-tree-group{
-    background-color: #111111;
+    background-color: var(--bg-dark);
     border-radius: 3.75rem;
     width: 100%;
     position: relative;
@@ -613,7 +632,7 @@ header {
 }
 
 .plant-a-tree-group1{
-    background-color: #111111;
+    background-color: var(--bg-dark);
     border-radius: 3.75rem;
     width: 100%;
     position: relative;
@@ -649,7 +668,7 @@ header {
 }
 
 .number-boxs1 {
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1.125rem 1.875rem 1.0625rem 1.9375rem;
 }
@@ -657,12 +676,12 @@ header {
 .number-boxs1 h4{
     font-size: 2.25rem;
     font-weight: 500;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     line-height: 2.5rem;
 }
 
 .number-boxs2 {
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1.125rem 1.625rem 1.0625rem 1.75rem;
 }
@@ -670,12 +689,12 @@ header {
 .number-boxs2 h4{
     font-size: 2.25rem;
     font-weight: 500;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     line-height: 2.5rem;
 }
 
 .number-boxs3 {
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1.125rem 1.625rem 1.0625rem 1.75rem;
 }
@@ -683,7 +702,7 @@ header {
 .number-boxs3 h4{
     font-size: 2.25rem;
     font-weight: 500;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     line-height: 2.5rem;
 }
 
@@ -696,7 +715,7 @@ header {
 .plant-a-tree h3{
     font-size: 2.25rem;
     text-align: start;
-    color: #2e7d32;
+    color: var(--primary-main);
     font-weight: 500;
     line-height: 2.5rem;
 }
@@ -712,8 +731,8 @@ header {
     padding: 1.5313rem 0;
     font-size: 1.5rem;
     line-height: 2rem;
-    background-color: #2e7d32;
-    color: #66BB6A;
+    background-color: var(--primary-main);
+    color: var(--primary-lighter);
     cursor: pointer;
     border-radius: 1.25rem;
     border-color: transparent;
@@ -721,13 +740,13 @@ header {
 }
 
 .plant-a-tree-button:hover{
-    background-color: #555555;
-    color: #fff;
+    background-color: var(--text-secondary);
+    color: var(--bg-light);
 }
 
 .plant-a-tree-button-text h6{
     font-size: 1rem;
-    color: #2e7d32;
+    color: var(--primary-main);
     font-weight: 400;
     line-height: 1.5rem;
 }
@@ -750,12 +769,12 @@ header {
 .texts-for-company h1{
     text-align: center;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .texts-for-company h3{
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -780,12 +799,12 @@ header {
     align-items: center;
     padding: 5.6875rem 9.5625rem;
     gap: .3125rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     border-radius: 3.75rem;
 }
 
 .box-number-hectare1{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1.3438rem 1.6875rem;
 }
@@ -796,7 +815,7 @@ header {
 }
 
 .box-number-hectare2{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1.3438rem 1.1563rem;
 }
@@ -807,7 +826,7 @@ header {
 }
 
 .box-number-hectare3{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: 1.3438rem .4688rem;
 }
@@ -820,7 +839,7 @@ header {
 .heading-hectare{
     font-size: 3.75rem;
     font-weight: bold;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     margin: 0;
 }
 
@@ -829,13 +848,13 @@ header {
     font-weight: 500;
     text-align: center;
     line-height: 2rem;
-    color: #2e7d32;
+    color: var(--primary-main);
 }
 
 .for-company-group2{
     display: flex;
     flex-direction: column;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     border-radius: 3.75rem;
     gap: 4.1875rem;
     padding: 3.75rem 15.125rem;
@@ -851,14 +870,14 @@ header {
     font-size: 3.75rem;
     text-align: center;
     font-weight: bold;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     margin: 0;
 }
 
 .heading-texts h3{
     font-size: 2.25rem;
     font-weight: 500;
-    color: #fff;
+    color: var(--bg-light);
     text-align: center;
     line-height: 2.5rem;
     margin: 0;
@@ -880,7 +899,7 @@ header {
 
 .what-the-company-gets-icon{
     padding: 3.0625rem;
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
 }
 
@@ -888,7 +907,7 @@ header {
     font-size: 1.875rem;
     font-weight: 500;
     text-align: center;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     line-height: 2.25rem;
 }
 
@@ -897,8 +916,8 @@ header {
     margin: 0 18.75rem;
     border-radius: 1.25rem;
     border-color: transparent;
-    background-color: #2e7d32;
-    color: #66BB6A;
+    background-color: var(--primary-main);
+    color: var(--primary-lighter);
     cursor: pointer;
     font-size: 1.875rem;
     font-weight: 500;
@@ -906,8 +925,8 @@ header {
     transition: background-color 0.8s, color 0.8s;
 }
 .btn-for-company:hover{
-    background-color: #555555;
-    color: #fff;
+    background-color: var(--text-secondary);
+    color: var(--bg-light);
 }
 
 /* Social network */
@@ -928,12 +947,12 @@ header {
 .texts-social-network h1{
     text-align: center;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .texts-social-network h3{
     text-align: center;
-    color: #fff;
+    color: var(--bg-light);
     font-size: 2.25rem;
     line-height: 2.5rem;
 }
@@ -945,7 +964,7 @@ header {
     flex-direction: row;
     border-radius: 3.75rem;
     padding: 5.5838rem 5.375rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     gap: 13.1875rem;
 }
 
@@ -960,7 +979,7 @@ header {
 .heading-social-network{
     text-align: start;
     font-size: 3.75rem;
-    color: #66BB6A;
+    color: var(--primary-lighter);
     font-weight: bold;
 }
 
@@ -973,13 +992,13 @@ header {
 .paragraph-social-network{
     font-size: 2.25rem;
     font-weight: 500;
-    color: #2e7d32;
+    color: var(--primary-main);
     line-height: 2.5rem;
     list-style: disc;
 }
 
 .icon{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: .75rem;
 }
@@ -990,7 +1009,7 @@ header {
     flex-direction: column;
     width: 103.25rem;
     border-radius: 3.75rem;
-    background-color: #111111;
+    background-color: var(--bg-dark);
     padding: 5.75rem 8.875rem;
     margin-bottom: 7.875rem;
     gap: 8.25rem;
@@ -1005,7 +1024,7 @@ header {
 }
 
 .contact-us-img{
-    background-color: #131811;
+    background-color: var(--bg-darker);
     border-radius: 3.75rem;
     padding: .9375rem;
 }
@@ -1035,7 +1054,7 @@ header {
 }
 
 .contact-us-input label{
-    color: #fff;
+    color: var(--bg-light);
     font-weight: 500;
     font-size: 1.5rem;
     line-height: 2rem;
@@ -1043,8 +1062,8 @@ header {
 
 .contact-us-control{
     font-size: 1.25rem;
-    color: #fff;
-    background-color: #131811;
+    color: var(--bg-light);
+    background-color: var(--bg-darker);
     border-color: transparent;
     border-radius: 1rem;
     line-height: 1.75rem;
@@ -1067,8 +1086,8 @@ textarea{
     padding: 1.625rem 1.5625rem;
     border-radius: 1rem;
     border-color: transparent;
-    color: #fff;
-    background-color: #131811;
+    color: var(--bg-light);
+    background-color: var(--bg-darker);
 }
 
 .checkbox{
@@ -1092,14 +1111,14 @@ textarea{
 }
 
 .btn-privaty-police{
-    color: #64B5F6;
+    color: var(--secondary-main);
 }
 .btn-submit-your-application{
     display: block;
     width: 100%;
     padding: .9375rem;
-    background-color: #2e7d32;
-    color: #66BB6A;
+    background-color: var(--primary-main);
+    color: var(--primary-lighter);
     border: none;
     border-radius: 1.25rem;
     font-weight: 400;
@@ -1110,15 +1129,15 @@ textarea{
 }
 
 .btn-submit-your-application:hover{
-    background-color: #555555;
-    color: #fff;
+    background-color: var(--text-secondary);
+    color: var(--bg-light);
 }
 
 
 /* Footer */
 footer{
     width: 100%;
-    background-color: #111111;  
+    background-color: var(--bg-dark);  
     padding: 3.5rem;
 
 }
@@ -1152,7 +1171,7 @@ footer{
 }
 
 h2{
-    color: #66BB6A;
+    color: var(--primary-lighter);
 }
 
 .phones{
@@ -1162,7 +1181,7 @@ h2{
 }
 
 li{
-    color: #2e7d32;
+    color: var(--primary-main);
     list-style: none;
     font-size: 1.25rem;
     font-weight: 400;
@@ -1187,7 +1206,7 @@ li{
     line-height: 1.75rem;
     font-weight: 400;
     margin-bottom: 1.125rem;
-    color: #64B5F6;
+    color: var(--secondary-main);
 }
 .footer-box{
     display: flex;
@@ -1459,14 +1478,12 @@ li{
     }
 
     .plan-number{
-        background-color: #131811;
         padding: .0625rem .5625rem;
         margin-right: .4375rem;
         border-radius: 2rem;
     }
 
     .plan-number1{
-        background-color: #131811;
         padding: .0625rem .6875rem;
         margin-right: .4375rem;
         border-radius: 2rem;
@@ -1482,7 +1499,7 @@ li{
         font-size: 1.25rem;
         line-height: 1.75rem;
         font-weight: 400;
-        color: #66BB6A;
+        color: var(--primary-lighter);
     }
     .container-plan-work{
         width: 100%;
@@ -1498,7 +1515,6 @@ li{
         font-size: .875rem;
         line-height: 1.25rem;
         font-weight: 400;
-        color: #4CAF50;
     }
 
     /* Influence form */
@@ -1541,7 +1557,6 @@ li{
         flex-direction: column;
         align-items: center;
         padding: 2.9375rem 3.0625rem;
-        background-color: #111111;
         border-radius: 2rem;
         gap: .625rem;
     }
@@ -1968,7 +1983,6 @@ li{
         line-height: 1rem;
         font-weight: 400;
         margin-bottom: 1.125rem;
-        color: #64B5F6;
     }
 
     .footer-box{
