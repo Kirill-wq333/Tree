@@ -7,7 +7,7 @@ document.getElementById("planting-form").addEventListener("submit", async functi
     const total = quantity * 500;
 
     const BOT_TOKEN = "8474056753:AAHVqta6SBoNXsn0UD89TbF_8PktB_07k7k"; 
-    const CHAT_ID = "904541305";        
+    const CHAT_ID = "-5012867418";        
     const URL = `https://api.telegram.org/bot${BOT_TOKEN}/sendMessage`;
 
     const message = `
