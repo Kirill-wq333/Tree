@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ДеревьЯ</title>
+
+    <link rel="icon" type="image/x-icon" href="img/trees_ico.ico">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/trees.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/trees.png">
+    
+    <!-- Для Apple устройств -->
+    <link rel="apple-touch-icon" sizes="180x180" href="img/trees.png">
+    
+    <!-- Для Android -->
+    <link rel="icon" type="image/png" sizes="192x192" href="img/trees.png">
+    
+    <link href="https://fonts.googleapis.com/css?family=Montserrat:400,500" rel="stylesheet">
+    <link rel="stylesheet" href="./StyleMain.css">
+</head>
+ <body>
+    <div class="container">
+        
+        <header>
+            <img src="img/logo.svg"  alt="Logotip" class="header-logotip">
+            <div class="header-buttons">
+                <button type="submit" class="btn">ДЛЯ КОМПАНИЙ</button>
+                <button type="submit" class="btn">РОЩА СЛАВЫ</button>
+            </div>
+
+            <div class="burger-button">
+                <img class="open-mobile-menu">
+            </div>
+
+            <div class="mobile-menu">
+                <button type="button" class="mobile-btn">ДЛЯ КОМПАНИЙ</button>
+                <button type="button" class="mobile-btn">РОЩА СЛАВЫ</button>
+            </div>
+        </header>
+        
+        <div class="form-main">
+            <img src="img/cursiv.png" alt="cursiv" class="cursiv">
+            <div class="main">
+                <div class="main-container">
+                    <div class="box-main">
+                        <h6 class="text-main">Покупай саженцы — сажай лес. Лес, в который можно вернуться</h6>
+                        <button type="button" class="btn-main">Выбрать город и посадку</button>
+                    </div>
+                    <div class="double-photo">
+                        <img src="img/man.png" alt="man" class="man">
+                        <img src="img/man_2.png" alt="man-2" class="man">
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="form-video-photo">
+            <div class="video">
+                <img src="img/image1.png" alt="video" class="video">
+                <img src="img/play.svg" alt="play" class="click-video">
+            </div>
+            <div class="photos">
+                <img src="img/image2.png" alt="photo" class="photo">
+                <img src="img/image3.png" alt="photo" class="photo">
+                <div class="added-photo">
+                    <img src="img/image4.png" alt="photo" class="photo">
+                    <img src="img/added.svg" alt="added" class="add-photo">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="seedling-city-format">
+            
+            <div class="texts-seedling-city-format">
+                <h1>Присоединяйся к мероприятию по посадке растений</h1>
+                <h3>Выберите свой город, выберите кол-во саженцев и станьте частью леса.</h3>
+            </div>
+            <div class="form-container">
+                <form id="planting-form">
+                    <div class="form-city-format">
+                        <div class="form-group">
+                            <label for="city">Выбрать город</label>
+                            <select id="city" class="form-control1">
+                                <option value="moscow">Москва</option>
+                                <option value="spb">Санкт-Петербург</option>
+                                <option value="ekb">Екатеринбург</option>
+                                <option value="novosibirsk">Новосибирск</option>
+                            </select>
+                        </div>
+                        
+                        <div class="form-group">
+                            <label for="format">Выбрать формат</label>
+                            <select id="format" class="form-control1">
+                                <option value="individual">Индивидуальная посадка</option>
+                                <option value="group">Групповая посадка</option>
+                                <option value="corporate">Корпоративная посадка</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="form-group2">
+                        <label for="quantity">Выбрать кол-во саженцев</label>
+                        <input type="number" id="quantity" class="form-control2" min="1" value="10">
+                        <div class="price-per-item" id="price-per-item">500 ₽ за один саженец</div>
+                        <div class="price-amount" id="total-price">5000 ₽</div>
+                    </div>
+                    
+                    
+                    <button type="submit" class="btn-submit">Подать заявку</button>
+                </form>
+            </div>
+        </div>
+
+        <div class="form-how-it-works">
+
+            <div class="texts-how-it-works">
+                <h1>Как это работает</h1>
+                <h3>Пять простых шагов</h3>
+            </div>
+
+            <div class="how-it-works-box">
+                <h2 class="text-how-it-works">Как это работает?</h2>
+                <div class="form-container-plan-work">
+
+                    <div class="container-plan-work">
+                        <div class="plan-work">
+                            <div class="plan-number1">
+                                <h6 class="number">1</h6>
+                            </div>
+                            <h4 class="plan">Выбираете город и формат участия</h4>
+                        </div>
+                        <div class="plan-work">
+                            <div class="plan-number">
+                                <h6 class="number">2</h6>
+                            </div>
+                            <h4 class="plan">Оплачиваете саженцы / гектар</h4>
+                        </div>
+                        <div class="plan-work">
+                            <div class="plan-number">
+                                <h6 class="number">3</h6>
+                            </div>
+                            <h4 class="plan">Получаете приглашение и координаты</h4>
+                        </div>
+                    </div>
+
+                    <div class="container-plan-work">
+                        <div class="plan-work">
+                            <div class="plan-number">
+                                <h6 class="number">4</h6>
+                            </div>
+                            <h4 class="plan">Приезжаете и сажаете</h4>
+                        </div>
+                        <div class="plan-work">
+                            <div class="plan-number">
+                                <h6 class="number">5</h6>
+                            </div>
+                            <h4 class="plan">Получаете фото / видео /отчет / сертификат</h4>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="form-influence">
+            <div class="texts-influence">
+                <h1>Влияние, которое мы оказываем</h1>
+                <h3>Каждый год миллионы гектаров российских лесов гибнут от пожаров и вырубки лесов.Но вместе мы создаем то, что переживет нас всех.</h3>
+            </div>
+
+            <div class="influence-boxs">
+                <div class="influence">
+                    <div class="influence-img">
+                        <img src="img/ic_fire.svg" alt="fire">
+                    </div>
+                    <h1 class="heading-influence">10М+</h1>
+                    <h5 class="description-influence">Сгорают ежегодно гектаров земли в России.</h5>
+                </div>
+                <div class="influence">
+                    <div class="influence-img">
+                        <img src="img/ic_tree.svg" alt="tree">
+                    </div>
+                    <h1 class="heading-influence">50К+</h1>
+                    <h5 class="description-influence">Деревьев посажены людьми в лесах.</h5>
+                </div>
+                <div class="influence">
+                    <div class="influence-img">
+                        <img src="img/ic_people.svg" alt="people">
+                    </div>
+                    <h1 class="heading-influence">5.000+</h1>
+                    <h5 class="description-influence">Участников (Семей&Компаний).</h5>
+                </div>
+                <div class="influence">
+                    <div class="influence-img">
+                        <img src="img/ic_leaf.svg" alt="leaf">
+                    </div>
+                    <h1 class="heading-influence">85%</h1>
+                    <h5 class="description-influence">Уровень выживаемости деревьев посаженных в нашей области</h5>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-plant-a-tree">
+            <div class="texts-plant-a-tree">
+                <h1>Посади дерево которое будет в памяти</h1>
+                <h3>Посади дерево в честь чего-то знаминательного что хочешь запомнить надолго или почтить кого-то и не желаешь забывать этого. Дерево - отличный вариант для этого!</h3>
+            </div>
+
+            <div class="plant-a-tree-container">
+                <div class="plant-a-tree-group1">
+                    <img src="img/cursiv_v2.png" alt="cursiv-v2" class="cursiv-v2">
+                    <div class="container-group">
+                        <div class="plant-a-tree-img">
+                            <div class="plant-a-tree">
+                                <div class="number-boxs1">
+                                    <h4>1</h4>
+                                </div>
+                                <h2>Свадебное дерево</h2>
+                                <h3>Каждая семья после ЗАГСа может поехать не в ТЦ, а на свою первую совместную посадку.Дерево растёт вместе с вами</h3>
+                            </div>
+                            <div class="box-img">
+                                <img src="img/wedding_tree.png" alt="wedding_tree">
+                            </div>
+                        </div>
+                        <div class="plant-a-tree-button-text">
+                            <button type="submit" class="plant-a-tree-button">Выбрать посадку и время</button>
+                            <h6>5,000 ₽ - ваши традиции, ваш лес, ваше наследие.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-a-tree-group">
+                    <img src="img/cursiv_v2.png" alt="cursiv-v2" class="cursiv-v2">
+                    <div class="container-group">
+                        <div class="plant-a-tree-img">
+                            <div class="plant-a-tree">
+                                <div class="number-boxs2">
+                                    <h4>2</h4>
+                                </div>
+                                <h2>Посади дерево</h2>
+                                <h3>Быть мужчиной - это не значит отращивать бороду, это значит брать на себя ответственность.</h3>
+                            </div>
+                            <div class="box-img">
+                                <img src="img/becoming_man.png" alt="becoming_man">
+                            </div>
+                        </div>
+                        <div class="plant-a-tree-button-text">
+                            <button type="submit" class="plant-a-tree-button">Выбрать посадку и время</button>
+                            <h6>5,000 ₽ - инвестиция в лес и в характер вашего ребенка.</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="plant-a-tree-group">
+                    <img src="img/cursiv_v2.png" alt="cursiv-v2" class="cursiv-v2">
+                    <div class="container-group">
+                        <div class="plant-a-tree-img">
+                            <div class="plant-a-tree">
+                                <div class="number-boxs3">
+                                    <h4>3</h4>
+                                </div>
+                                <h2>Роща славы</h2>
+                                <h3>Мы создаём Рощу славы — живой мемориал, где дети с мамами сажают деревья в честь своих защитников.</h3>
+                            </div>
+                            <div class="box-img">
+                                <img src="img/grove_honor.png" alt="grove_honor">
+                            </div>
+                        </div>
+                        <div class="plant-a-tree-button-text">
+                            <button type="submit" class="plant-a-tree-button">Выбрать посадку и время</button>
+                            <h6>5,000 ₽ - инвестиция в лес и в память своих защитников.</h6>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-for-company">
+            <div class="texts-for-company">
+                <h1>Для компаний</h1>
+                <h3>Расценки и выгоды для компаний.</h3>
+            </div>
+            
+            <div class="for-company-container">
+                <div class="for-company-group">
+                    <div class="hectare-box">
+                        <div class="box-number-hectare1">
+                            <h2>1</h2>
+                        </div>
+                        <h1 class="heading-hectare">Гектар</h1>
+                        <h4 class="description-hectare">от 100.000 ₽</h4>
+                    </div>
+                    <div class="hectare-box">
+                        <div class="box-number-hectare2">
+                            <h2>10</h2>
+                        </div>
+                        <h1 class="heading-hectare">Гектар</h1>
+                        <h4 class="description-hectare">от 1.000.000 ₽</h4>
+                    </div>
+                    <div class="hectare-box">
+                        <div class="box-number-hectare3">
+                            <h2>100</h2>
+                        </div>
+                        <h1 class="heading-hectare">Гектар</h1>
+                        <h4 class="description-hectare">от 10.000.000 ₽</h4>
+                    </div>
+                </div>
+                <div class="for-company-group2">
+                    <div class="heading-texts">
+                        <h1>Что получает компания?</h1>
+                        <h3>Выгоды для компаний.</h3>
+                    </div>
+                    <div class="what-the-company-gets-container-boxs">
+                        <div class="what-the-company-gets-box">
+                            <div class="what-the-company-gets-icon"><img src="img/ic_solid_sign.svg" alt=""></div>
+                            <h4>Знак в офис</h4>
+                        </div>
+                        <div class="what-the-company-gets-box">
+                            <div class="what-the-company-gets-icon"><img src="img/ic_dog.svg" alt=""></div>
+                            <h4>Упоминание на сайте</h4>
+                        </div >
+                        <div class="what-the-company-gets-box">
+                            <div class="what-the-company-gets-icon"><img src="img/ic_report-box.svg" alt=""></div>
+                            <h4>Отчеты</h4>
+                        </div>
+                        <div class="what-the-company-gets-box">
+                            <div class="what-the-company-gets-icon"><img src="img/ic_map_marker_distance.svg" alt=""></div>
+                            <h4>Возможность расширять площадь</h4>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn-for-company">Оставить заявку от компании</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="form-social-network">
+            <div class="texts-social-network">
+                <h1>Социальные сети</h1>
+                <h3>Важность и влияние</h3>
+            </div>
+            
+            <div class="social-network-container">
+                <div class="social-network-group">
+                    <div class="icon">
+                        <img src="img/ic_like.svg" alt="like">
+                    </div>
+                    <h1 class="heading-social-network">Зачем важно не «лайкать посты про экологию», а выходить и сажать.</h1>
+                    <div class="paragraphs">
+                        <li class="paragraph-social-network">Результат против видимости. Дерево производит кислород, лайк — нет.</li>
+                        <li class="paragraph-social-network">Личная ответственность. Вы становитесь частью решения, а не его обсуждения.</li>
+                        <li class="paragraph-social-network">Пример другим. Личный action вдохновляет окружающих сильнее, чем лайк в соцсети.</li>
+                    </div>
+                </div>
+                <div class="screen">
+                    <img src="img/screen.png" alt="screen">
+                </div>
+            </div>
+
+        </div>
+
+        <div class="form-contact-us">
+            <div class="contact-us-group1">
+                <div class="contact-us-img">
+                    <img src="img/ic_search.svg" alt="search">
+                </div>
+                <h2 class="text-contact-us">Свяжитесь с нами</h2>
+                <div class="contact-us-box-inputs">
+                    <div class="contact-us-box-input">
+                        <div class="contact-us-input">
+                            <label for="tel">Введите номер</label>
+                            <input type="tel" id="phone" class="contact-us-control" maxlength="30" placeholder="Введите номер" pattern="\+7\s?[\(]{0,1}9[0-9]{2}[\)]{0,1}\s?\d{3}[-]{0,1}\d{2}[-]{0,1}\d{2}">
+                        </div>
+                        <div class="contact-us-input">
+                            <label for="name">Введите Имя</label>
+                            <input type="text" id="name" class="contact-us-control" maxlength="30" placeholder="Введите имя">
+                        </div>
+                    </div>
+                    <div class="contact-us-box-input">
+                        <div class="contact-us-input">
+                            <label for="email">Введите Email</label>
+                            <input type="email" id="email" class="contact-us-control" maxlength="30" placeholder="Введите Email">
+                        </div>
+                        <div class="contact-us-input">
+                            <label for="lastname">Введите Фамилию</label>
+                            <input type="text" id="lastname" class="contact-us-control" maxlength="30" placeholder="Введите Фамилию">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-us-group2">
+                <textarea id="quantity" class="contact-us-control2" maxlength="500" rows="5" placeholder="Введите текст"></textarea>
+                <div class="checkbox">
+                    <input type="checkbox" id="checkedDisabled" checked>
+                    <label for="checkedDisabled">
+                        <span class="text-label">Нажимая вы соглашаетесь с</span>
+                        <span class="btn-privaty-police">Политикой Конфеденциальности</span>
+                    </label>
+                </div>
+                <button type="submit" class="btn-submit-your-application">Оставить заявку от компании</button>
+            </div>
+        </div>
+
+    </div>
+        
+    <footer>
+            <div class="footer-box">
+                <div class="footer-group">
+                    <img src="img/logo.svg" alt="logo" class="logo">
+                    <div class="footer-contact-email">
+                        <div class="footer-contact">
+                            <h2>Контакты</h2>
+                            <ul class="phones">
+                                <li>+7(937) 66-2-66-37</li>
+                                <li>+7(921) 56-2-68-37</li>
+                                <li>+7(951) 73-1-58-78</li>
+                            </ul>
+                        </div>
+                        
+                        <div class="footer-email">
+                            <h2>Email</h2>
+                            <ul class="email">
+                                <li>mailexample@mail.com</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="footer-group2">
+                    <div class="footer-privacy-policy">
+                        <h4 class="privacy-policy">Политика Конфеденциальности</h4>
+                        <div class="footer-icons">
+                            <img src="img/ic_google.svg" alt="google" class="footer-google">
+                            <img src="img/ic_telegram.svg" alt="telegram" class="footer-telegram">
+                            <img src="img/ic_vk.svg" alt="vk" class="footer-vk">
+                        </div>
+                    </div>
+                    <img src="img/ic_copyright.svg" alt="copyright" class="footer-copyright">
+                </div>    
+            </div>
+    </footer>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inputmask/5.0.7/jquery.inputmask.min.js"></script>
+    <script src="./scripts/notfEmail.js"> </script>
+    <script src="./scripts/form2.js"> </script>
+    <script src="./scripts/JavaScript.js"></script>
+
+</body>
+</html>
